@@ -37,3 +37,17 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Custom Keymaps
+vim.keymap.set({ 'n', 'v', 'i' }, '<C-c>', '<Esc>', { desc = 'Ctrl+C mimics Escape' })
+
+vim.keymap.set('n', '<leader>80', '80|wF<Space>r<CR>', { desc = 'Replaces the space near linelength 80 with newine' })
+
+vim.keymap.set({ 'n', 't' }, '<leader>x', '<Cmd>x<CR>', { desc = 'Kill current buffer' })
+
+vim.keymap.set('n', 'gg', 'ggzz', { desc = 'Center screen after goto start' })
+vim.keymap.set('n', 'G', 'Gzz', { desc = 'Center screen after goto end' })
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Center screen after 1/2 page down' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Center screen after 1/2 page up' })
+
+vim.keymap.set('n', '<leader>zm', '<Cmd>ZenMode<CR>', { desc = 'Toggle ZenMode' })

@@ -4,4 +4,10 @@
 -- See the kickstart.nvim README for more information
 return {
     'tpope/vim-vinegar',
+
+    { 'folke/zen-mode.nvim', opts = {
+        window = {
+            backdrop = 1,
+        },
+    } },
 }
