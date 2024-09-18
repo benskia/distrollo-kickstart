@@ -1,11 +1,11 @@
 return {
     {
-        -- 'catppuccin/nvim',
-        'rose-pine/neovim',
+        'catppuccin/nvim',
+        -- 'rose-pine/neovim',
         priority = 1000, -- Make sure to load this before all the other start plugins.
         init = function()
-            -- vim.cmd.colorscheme 'catppuccin-latte'
-            vim.cmd.colorscheme 'rose-pine'
+            vim.cmd.colorscheme 'catppuccin-mocha'
+            -- vim.cmd.colorscheme 'rose-pine'
 
             -- Configure
             vim.cmd.hi 'Comment gui=none'
