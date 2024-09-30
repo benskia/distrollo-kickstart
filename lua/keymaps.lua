@@ -32,7 +32,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-c>', '<Esc>', { desc = 'Ctrl+C mimics Escape' })
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-s>', '<Esc><Esc><Cmd>w<CR>', { desc = 'Esc and save' })
 
-vim.keymap.set('n', '<leader>80', '85|F<Space>r<CR>', { desc = 'Replaces the space near linelength 80 with newine' })
+vim.keymap.set('n', '<leader>80', '81|F<Space>r<CR>', { desc = 'Replaces the space near linelength 80 with newine' })
 
 vim.keymap.set({ 'n', 't' }, '<leader>x', '<Cmd>x<CR>', { desc = 'Kill current buffer' })
 
